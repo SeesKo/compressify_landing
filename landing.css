@@ -1,0 +1,212 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* Resetting margin and padding for all elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: rgba(51, 51, 51, 0.8); /* Translucent background */
+    color: white;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    width: 100%; /* Ensure nav takes full width */
+    height: 60px; /* Set a fixed height for the navbar */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    align-items: center;
+    height: 100%; /* Make ul take full height of nav */
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    height: 100%; /* Make li take full height of ul */
+}
+
+nav ul li a {
+    display: flex;  /* Make the anchor tag a flex container */
+    justify-content: center;  /* Center the text horizontally */
+    align-items: center;  /* Center the text vertically */
+    height: 100%;  /* Make anchor take full height of li */
+    padding: 0 15px;  /* Add some padding for better click area */
+    color: white;
+    text-decoration: none;
+    font-size: 1.0em; /* Slightly increase font size for better visibility */
+    transition: background-color 0.3s, color 0.3s;  /* Smooth transition */
+}
+
+nav ul li a.active {
+    border-bottom: 7px solid goldenrod; /* Active link underline color */
+}
+
+nav ul li:hover {
+    background-color: gold;  /* Change background color on hover */
+    border-radius: 5px; /* Add rounded corners */
+    overflow: hidden;
+}
+
+nav ul li:hover a {
+    color: midnightblue;  /* Change text color on hover */
+}
+
+#intro {
+    position: relative;
+}
+
+.cover-image {
+    background: url('images/cover-image.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cover-image h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4.5em;
+    margin: 0;
+}
+
+.cover-image p {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.cover-image .cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px 20px;
+    font-size: 1.2em;
+    text-decoration: none;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.cover-image .cta-button:hover {
+    background-color:gold;
+    color: midnightblue;
+}
+
+#features {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#features h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#features .feature {
+    margin: 20px 0;
+    padding-bottom: 30px;
+}
+
+#features .feature img {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    border-radius: 30px; /* Rounded corners */
+}
+
+#features .feature h3 {
+    font-size: 2em;
+    margin: 10px 0;
+}
+
+#features .feature p {
+    font-size: 1.2em;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#about {
+    padding: 50px 20px;
+    margin-top: -100px;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.developer-name {
+    color: #000; /* Change text color */
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+}
+
+#about ul {
+    list-style-type: none;
+    padding-bottom: 20px;
+    margin: 0;
+}
+
+#about ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#about ul li a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+#about ul li a:hover {
+    color:indigo;
+    text-decoration: underline;
+}
+
+#about p a {
+    color: #007BFF;
+    text-decoration: none;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#about p a:hover {
+    color: indigo;
+    text-decoration: underline;
+}
+
+.footer {
+    width: 100%;
+    background-color: #ccc;
+    color: #000;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: left;
+    padding: 20px 40px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
