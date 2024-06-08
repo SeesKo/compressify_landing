@@ -1,6 +1,13 @@
 document.addEventListener('DOMContentLoaded', function() {
     const navLinks = document.querySelectorAll('nav ul li a');
 
+    // Force regular links to open in new tabs
+    document.querySelectorAll('a').forEach(link => {
+        if (!link.closest('nav')) { // Check if the link is not within the navigation menu
+            link.setAttribute('target', '_blank');
+        }
+    });
+
     for (let link of navLinks) {
         link.addEventListener('click', function(e) {
             e.preventDefault();
