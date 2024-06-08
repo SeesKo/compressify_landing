@@ -44,4 +44,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
+
+    // Update current year using JavaScript
+    document.getElementById('currentYear').textContent = new Date().getFullYear();
 });
